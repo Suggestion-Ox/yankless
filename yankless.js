@@ -22,7 +22,9 @@ class Yankless {
     // If the language is not English and the browser is not in the dialects list, don't load the dictionary
     if (!(language[0] == "en" && this.dialects.includes(language[1]))) return;
     // Load the dictionary
-    let { translations } = await import("./translations.js");
+    let { translations } = await import(
+      "https://cdn.jsdelivr.net/gh/Suggestion-Ox/yankless@main/translations.js"
+    );
     this.translations = translations;
     // If we've set the from option to a dialect, swap the keys and values so we're translating to American
     if (this.dialects.includes(this.from)) {
