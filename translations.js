@@ -1,4 +1,4 @@
-var translations = {
+export var translations = {
   accessorize: "accessorise",
   accessorized: "accessorised",
   accessorizes: "accessorises",
